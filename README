@@ -1,12 +1,43 @@
 README 
 ======
+日本の郵便番号から住所タグ( addr:* )の入力補助を目的としたプラグインです。
 
-Readme for your plugin 
+addr:postcodeの値からaddr:country, addr:province, addr:city, addr:quarter, addr:fullを自動的に埋めます。
 
-    * author :Tsuyoshi Kinoshita.
+
+JPPostalcode2Address.jarがプラグイン本体です。
+JOSMのプラグインフォルダに手動で追加することで利用できます。
+
+    * author :Tsuyoshi Kinoshita, Yasuyuki Uno (2gprosoft at gmail.com)
     
     * MIT License
       
     * JOSMに手動でプラグインを導入する方法(http://josm.openstreetmap.de/wiki/Ja%3AHelp/Preferences/Plugins#Manuallyinstallingplugins)
     
     * プラグインの使い方(http://qiita.com/unotecjapan/items/97d0c9bdd338c98071f7)
+    
+    * Wiki(http://wiki.openstreetmap.org/wiki/JA:JOSM/Plugins/JPPostalcode2Address)
+
+=== 注意事項 ===
+
+本プラグインでは、郵便番号検索API(http://zip.cgis.biz/)を利用しています。
+
+郵便番号検索APIからの返り値を、
+
+addr:country = JP (固定値)
+
+addr:province = state
+
+addr:city = city
+
+addr:quarter = address
+
+addr:full = state + city + address
+
+とセットしています。
+
+既知の問題として、渋谷区や新宿区などの区もcityとしてAPIから返ってくるため、addr:cityに埋まってしまっています。
+
+addr:quarterに丁目や番地まで入ってきてしまうこともあります。
+
+APIを利用している関係上、本プラグインはオフラインでは動作しません。
