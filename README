@@ -17,6 +17,11 @@ JOSMのプラグインフォルダに手動で追加することで利用でき�
     * プラグインの使い方(http://qiita.com/unotecjapan/items/97d0c9bdd338c98071f7)
     
     * Wiki(http://wiki.openstreetmap.org/wiki/JA:JOSM/Plugins/JPPostalcode2Address)
+    
+    * ビルドするには、まずJOSM本体のソースをチェックアウトする必要があります。
+      josm/plugins以下にこのプロジェクトを配置して下さい。
+      詳しくはこちら(http://josm.openstreetmap.de/wiki/DevelopersGuide/DevelopingPlugins)
+   
 
 === 注意事項 ===
 
