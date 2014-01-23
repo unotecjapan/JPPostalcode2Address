@@ -21,6 +21,8 @@ JOSMのプラグインフォルダに手動で追加することで利用でき�
     * ビルドするには、まずJOSM本体のソースをチェックアウトする必要があります。
       josm/plugins以下にこのプロジェクトを配置して下さい。
       詳しくはこちら(http://josm.openstreetmap.de/wiki/DevelopersGuide/DevelopingPlugins)
+      
+    * Macでビルドすると問題ないが、Windowsでビルドするとプラグインが読み込めません。原因調査中です。
    
 
 === 注意事項 ===
