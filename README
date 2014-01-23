@@ -8,9 +8,9 @@ addr:postcodeの値からaddr:country, addr:province, addr:city, addr:quarter, a
 JPPostalcode2Address.jarがプラグイン本体です。
 JOSMのプラグインフォルダに手動で追加することで利用できます。
 
-    * author :Tsuyoshi Kinoshita, Yasuyuki Uno (2gprosoft at gmail.com)
+    * author : Tsuyoshi Kinoshita, Yasuyuki Uno(2gprosoft at gmail.com)
     
-    * MIT License
+    * License : GPL v3
       
     * JOSMに手動でプラグインを導入する方法(http://josm.openstreetmap.de/wiki/Ja%3AHelp/Preferences/Plugins#Manuallyinstallingplugins)
     
